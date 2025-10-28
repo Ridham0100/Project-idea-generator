@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain, SimpleSequentialChain, SequentialChain
 
 load_dotenv()
@@ -39,4 +39,5 @@ def project_idea_generator(idea):
         'name': output,    # Clean restaurant name
         'items': menu_items    # Menu items
     }
+
 
